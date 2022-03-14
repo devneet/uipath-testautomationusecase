@@ -71,8 +71,8 @@ pipeline {
 					environments: 'DEV',
 	                //credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: 'APIUserKey']
 	                credentials: Token(accountName: "${UIPATH_ORCH_LOGICAL_NAME}", credentialsId: 'APIUserKey'),
-					traceLevel: 'None',,
-					entryPointPaths: 'Main.xaml'
+					traceLevel: 'None',
+					entryPointPaths: 'NameVerificationTestCase.xaml'
 					)
 					
 	            }
